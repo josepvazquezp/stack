@@ -8,14 +8,14 @@ struct STRNODE{
     struct STRNODE *prior;
 };
 
-typedef struct STRNODE *Node;
+typedef struct STRNODE Node;
 
 struct STRSTACK{
     struct STRNODE *top;
     int size;
 };
 
-typedef struct STRSTACK *Stack;
+typedef struct STRSTACK Stack;
 
 Stack* stack_create();
 void push(Stack *stack, void *value);
